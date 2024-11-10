@@ -1,0 +1,23 @@
+1) Check docker version
+   docker --version
+
+2) Pull image from dockerhub
+   docker pull <image-name>
+   e.x. :-   docker pull openjdk
+
+3) Pull image from dockerhub with specific version
+   docker pull <image-name:version>
+   e.x. :-   docker pull openjdk:18
+
+4) Show all images
+   docker images
+
+5) Search avaliable images with image name
+   docker search <image-name>
+   e.x. :-  docker search MYSQL
+
+6) docker build <location-of-Dockerfile>
+
+7) Show all Containers :-  docker ps
+8) run images :-   docker run <Image_ID> / <Image_Name>
+ 
