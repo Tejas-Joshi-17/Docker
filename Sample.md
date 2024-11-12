@@ -1,6 +1,7 @@
 1) Tejas Joshi
 
-```plantuml
+``` plantum
+@startuml
 autonumber
 
 Alice -> Bob: Authentication Request
@@ -12,7 +13,7 @@ Alice <-- Bob: another authentication Response
 autonumber
 Bob -> Alice : Authentication Request
 Bob <- Alice : Authentication Response
-
+@enduml
 ```
 
 1) Samarth Usture
