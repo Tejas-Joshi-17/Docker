@@ -1,0 +1,9 @@
+sudo docker run -d --name mysql-host-network-db-server \
+  -e MYSQL_ROOT_PASSWORD=password \
+  -v mysql_host_data:/var/lib/mysql \
+  --network host \
+  mysql
+
+
+sudo docker exec -it mysql-host-network-db-server bash \
+mysql -u root -ppassword

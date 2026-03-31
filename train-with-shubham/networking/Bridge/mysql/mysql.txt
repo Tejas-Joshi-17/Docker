@@ -1,0 +1,10 @@
+sudo docker run -d --name mysql-bridge-network-db-server \
+  -e MYSQL_ROOT_PASSWORD=password \
+  -v mysql_bridge_data:/var/lib/mysql \
+  --network my-custom-network \
+  -p 3307:3306 \
+  mysql
+
+
+sudo docker exec -it mysql-bridge-network-db-server bash \
+mysql -u root -ppassword

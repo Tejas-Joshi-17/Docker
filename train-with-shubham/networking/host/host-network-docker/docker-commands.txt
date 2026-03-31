@@ -1,0 +1,11 @@
+# build
+sudo docker build -t host-network-docker:1.0.0 .
+
+# run
+sudo docker run -dit --network host --name host-network-docker host-network-docker:1.0.0
+
+# logs persist
+docker run -v "F:\Docker\train-with-shubham\networking\Bridge\spring-jpa\spring-jpa\image-perisist-logs":"/bridge-network-docker/logs"  --network my-custom-network --rm --name "bridge-network-docker" bridge-network-docker:1.0.0
+docker run -v "F:\Docker\train-with-shubham\networking\Bridge\spring-jpa\spring-jpa\image-perisist-logs":"/bridge-network-docker/logs"  --network host --rm --name "bridge-network-docker" bridge-network-docker:1.0.0
+
+
